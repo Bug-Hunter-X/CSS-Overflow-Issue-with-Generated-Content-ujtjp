@@ -1,0 +1,1 @@
+The CSS property `content` is used with the `::before` and `::after` pseudo-elements to insert generated content. However, if the generated content is too long and overflows its container, it can lead to unexpected layout issues or even hide other elements.  This is less common than simple typos but can cause tricky-to-debug issues.
