@@ -1,0 +1,22 @@
+/*overflowingContentSolution.css*/
+.container::before {
+  content: "This is a very long string that might overflow";
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*OR*/
+
+.container {
+  position: relative;
+}
+
+.container::before {
+  content: "This is a very long string that might overflow";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: fit-content;
+}
